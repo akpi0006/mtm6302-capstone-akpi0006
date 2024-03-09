@@ -23,7 +23,9 @@ body{
     text-decoration: none;
     color: #fff;
 }
-h2{
+
+h2 a{
+    text-decoration: none;
     color: #390000;
 }
 
@@ -42,6 +44,12 @@ h3{
 .qanda h3{
     border-radius: 20px;
 }
+.questions li{
+    list-style: none;
+    list-style-type: none;
+   text-align: right;
+}
+
 .intro p strong{
     font-family: 'Courgette', cursive;
 }
@@ -60,17 +68,19 @@ p{
     margin-top: 0;
     text-align: center;
 	background: #F5DDB0;
-	transition: 1s;
+	transition: 5s;
     font-family: 'courgette', cursive;
     
 }
+
+.pickone:hover {
+	background: #F5DDB0;
+	
+}
+
 .options a{
     text-decoration: none;
     color: #390000;
-}
-.pickone:hover {
-	background: #F5DDB0;
-	box-shadow: 0 0.15rem 1rem #002;
 }
 
 .start{
@@ -88,8 +98,45 @@ p{
     justify-content: center;
     align-items: center;
     color: white;
-
 }
+
+.activebox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.activebox div {
+    color: white;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.activebox div span {
+    color: black;
+}
+
+.gradebox div {
+    background-color: white;
+    width: 200px;
+   padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.gradebox div span {
+    color: black;
+}
+
+.gradebox .gradeline{
+    color: #000;
+    margin-bottom: 10px;
+ }
+
+
 .begin{
     background-color:#876464;
     padding: 10px;
@@ -99,15 +146,43 @@ p{
     color: #390000;
     
 }
-.questions p li{
+.qoptions{
     text-align: start; 
 }
-.questions li{
+.questions li {
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    text-align: left; /* Changed from center to left */
     font-size: 14px;
     font-weight: lighter;
-    
+    padding-left: 20px;
+}
+
+.question-number {
+    font-weight: bold;
+    border-bottom: 0.5px solid #000; /* You can adjust the color and thickness as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    padding-bottom: 5px; /* Adjust spacing as needed */
+}
+
+.sa{
+    background-color: #876464;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sa .submit a{
+    text-decoration: none;
+    color: white;
+}
+
+.submit{
+    background-color: #876464;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    color: white;
+    border: 1px solid white;
 }
 
 footer{
