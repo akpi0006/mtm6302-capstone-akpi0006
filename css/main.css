@@ -185,6 +185,61 @@ p{
     border: 1px solid white;
 }
 
+.next{
+	background-color: #F5DDB0;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    border: 1px solid rgb(88, 88, 88);
+}
+
+.nq{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+.previous{
+	background-color: #F5DDB0;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    border: 1px solid rgb(88, 88, 88);
+}
+
+.pr{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.previous a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.next, .previous {
+    background-color: #F5DDB0;
+    border-radius: 10px;
+    font-family: 'courgette', cursive;
+    font-size: 14px; 
+    border: 1px solid rgb(88, 88, 88);
+    margin: 0; /* Remove default margin */
+}
+
+.next a, .previous a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
 footer{
     background-color: white;
     text-align: center;
