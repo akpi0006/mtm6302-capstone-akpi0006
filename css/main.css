@@ -73,6 +73,11 @@ p{
     
 }
 
+.pickonebtn{
+    width: 300px;
+}
+
+
 .pickone:hover {
 	background: #F5DDB0;
 	
@@ -87,7 +92,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-top: 10px;
     background-color: #270000;
     padding: 10px;
@@ -104,20 +108,38 @@ p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    
 }
+
+.activebox a{
+    text-decoration: none;
+ }
 
 .activebox div {
     color: white;
-    width: 100px;
     background-color: white;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
+  
 }
 
-.activebox div span {
-    color: black;
+.active{
+    border: 5px solid #876464;
+    border-radius: 5%;
 }
+.text-primary {
+    color: black !important;
+}
+.activebox a {
+    text-decoration: none;
+    color: black; 
+}
+
+.activebox .list-group-item {
+    color: black; 
+}
+
 
 .gradebox div {
     background-color: white;
@@ -239,6 +261,53 @@ p{
     text-decoration: none;
     color: rgb(36, 36, 36);
 }
+
+/* Define styles for act and que sections */
+.act {
+    width: 50%; /* Initially set act section to occupy 50% of the width */
+}
+
+.que {
+    width: 50%; /* Initially set que section to occupy 50% of the width */
+}
+
+/* Flexbox layout for act and que sections */
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Display sections in a column layout */
+}
+
+.act,
+.que {
+    flex-grow: 1; /* Allow act and que sections to grow equally within the flex container */
+    width: 100%; }
+
+
+/* Media query for tablet/desktop mode */
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Display sections side by side */
+    }
+
+    .act {
+        order: 1; /* Move act section to the left */
+    }
+
+    .que {
+        order: 2; /* Move que section to the right */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: white;
